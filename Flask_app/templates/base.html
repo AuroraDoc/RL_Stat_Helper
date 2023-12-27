@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Improve your RL</title>
+    <link  rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+
+</head>
+<body>
+
+    <img src="static/css/test.png">
+    <br>    <!--Makes a break so that the form is not next to it but below-->
+    <!--action on a form means once its submitted it will do that which is the replay function in the .py file-->
+    <form action="replay_uploaded" method="post"> <!--the action sends us to a new url path by adding the action name-->
+        <p>Please submit replay</p>
+        <br>
+        <input type="file" name="replay_file">
+        <input type="text" name="replay_name">
+        <br>
+        <input type="submit" value="Enter" id="enter_button">
+        <!--in a form you cant use the button tag you need the input and then button/submit-->
+    </form>
+
+
+</body>
+</html>
