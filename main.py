@@ -48,7 +48,8 @@ class Replay:
 # might want to add in the ball stat later if we can get possession and pressure percentages
         for idx in range(0, team_size-1):
             player = {}
-            player.update({"name": data["blue"]["players"][idx]["name"]})
+            player.update({"name": data["blue"]["players"][idx]["name"]}) 
+            # update creates a new dictionary everytime. So initialize it once and predefine all the stats as keys and put the json in the val
             # Core
             player.update({"core_stats": data["blue"]["players"][idx]["stats"]["core"]})
             # Boost
