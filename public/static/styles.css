@@ -1,0 +1,76 @@
+p{
+    color: black;
+    font-family: Shanti, serif;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+img{
+    margin: 60px 0 30px 0;
+    height: 250px;
+    width: 250px;
+}
+
+input{
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: Shanti, serif;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+input:focus {
+    border: solid 5px #00ffce;
+    outline: none; /*default outline on a focused input is a line around it so we got rid of it*/
+}
+
+#enter_button{
+    background-color: palevioletred;
+    color: white;
+    width: 200px;
+}
+
+#enter_button:hover{
+    background-color: mediumvioletred;
+    cursor: pointer;
+    color: grey;
+}
+
+/* Replay */
+.big-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.heading{
+    width: 90vw;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+
+.stats-container{
+    width: 90vw;
+    border: solid black;
+    text-align: center;
+    color: black;
+}
+
+.user-container{
+    width: 90vw;
+    border: solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.player-stats{
+    border: solid black;
+    text-align: center;
+}
+
+
+

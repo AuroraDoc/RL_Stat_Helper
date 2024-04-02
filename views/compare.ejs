@@ -1,0 +1,38 @@
+<%- include("partials/header.ejs") %>
+
+    <body>
+        <div class="big-container">
+            <h2 class="heading">User Info:</h2>
+            <div class="user-container">        
+                <% for(const player of playerData){ %>
+                    <div class="player-stats">
+                        <ul>
+                            <% for(const [key, value] of Object.entries(player)) {%>
+                                <% updatedKey = key.replaceAll("_", " ") %>
+                                <li> <%= updatedKey %>: <%= value %> </li>
+                            <% } %>
+                        </ul>
+                    </div>
+                <% } %>
+            </div>
+            <div class="stats-container">
+                <h2>Expected Stats:</h2>
+                <ul>
+                    <%for(const [key, value] of Object.entries(expectedData)) {%>
+                        <% updatedKey = key.replaceAll("_", " ") %>
+                        <li> <%= updatedKey %>: <%= value %> </li>
+                    <%}%>
+                </ul>
+            </div>
+            <div class="stats-container">
+                <h2>Game Info:</h2>
+                <ul>
+                    <%for(const [key, value] of Object.entries(gameData)) {%>
+                        <% updatedKey = key.replaceAll("_", " ") %>
+                        <li> <%= updatedKey %>: <%= value %> </li>
+                    <%}%>
+                </ul>
+            </div>
+        </div>
+
+    </body>

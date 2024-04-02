@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+    <img src="static/test.png">
+    <br>    
+    <form action="/submit" method="post" enctype="multipart/form-data"> <!--the action sends us to a new url path by adding the action name-->
+        <p>Please submit replay</p>
+        <br>
+        <label for="replayt_file">Replay File:</label>
+        <input type="file" name="replay_file">
+        <label for="player_name">Player Name:</label>
+        <input type="text" name="player_name">
+        <label for="replay_name">Replay Name:</label>
+        <input type="text" name="replay_name">
+        <br>
+        <input type="submit" value="Submit" id="enter_button">
+    </form>
+</body>
+</html>
