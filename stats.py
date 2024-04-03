@@ -2,7 +2,7 @@ import json
 import requests
 import sys
 
-token = "GuGwhVgilMIQo14ToqZDOKDBFMzykrms185lZK84"
+token = "API Ballchasing Token"
 
 class Replay:
     def __init__(self, file):
