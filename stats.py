@@ -2,7 +2,8 @@ import json
 import requests
 import sys
 
-token = "API Ballchasing Token"
+
+token = {process.env.API_KEY}
 
 class Replay:
     def __init__(self, file):
