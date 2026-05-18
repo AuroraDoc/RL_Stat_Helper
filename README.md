@@ -9,5 +9,6 @@ continue to improve. The recommended stats he uses are in the recommended_stats.
   - json: to help get the data into a readable datatype for python
 
 # Plan for Future
-I plan on using this to insert data into a website using HTML/CSS and vanilla JS and using flask for the backend
-since it is lightweight. I have it framed but just working on connecting the two programs!
+I plan on using this to insert data into a website using HTML/CSS and React for the front end 
+and using flask for the backend since it is lightweight. I have it framed but 
+just working on connecting the two programs!
